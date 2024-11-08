@@ -1,0 +1,196 @@
+* {
+  font-family: "Poppins", Helvetica, sans-serif;
+  color: #111;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav {
+  padding: 8px;
+  position: fixed;
+}
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-background {
+  /* background-color: #d2f0ff; */
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .hero-background svg {
+    width: 75%;
+  }
+}
+
+.hero-background svg {
+  position: absolute;
+  box-sizing: border-box;
+  opacity: 0.35;
+  transition: 0.25s;
+  height: 100%;
+  filter: blur(25px);
+}
+
+/*? doesn't work */
+.hero-background svg:hover {
+  scale: 1.02;
+  opacity: 1;
+  transition: 0.25s;
+}
+
+.hero-foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 64px;
+  text-align: center;
+  transition: 0.25s;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+  }
+}
+
+.hero-title:hover {
+  transition: 0.25s;
+  scale: 1.01;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-bottom svg {
+  animation: swipedown 2s linear infinite;
+}
+
+@keyframes swipedown {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+article.members {
+  margin: 64px 48px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 16px;
+}
+
+.card {
+  margin-top: 110px;
+  width: 240px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  position: relative;
+  transition: 0.25s;
+}
+
+a .card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transition: 0.25s;
+  scale: 1.05;
+}
+
+.card:hover .foto {
+  transition: 0.25s;
+  translate: 0 -2px;
+}
+
+.card:active {
+  scale: 0.95;
+}
+
+.container-foto {
+  height: 200px;
+}
+
+.foto-box {
+  position: absolute;
+  top: -120px;
+}
+
+.foto {
+  border-radius: 50px;
+  width: 240px;
+}
+
+@media screen and (max-width: 768px) {
+  article.members {
+    margin: 48px 36px;
+  }
+
+  .card {
+    width: 200px;
+    border-radius: 35px;
+  }
+
+  .container-foto {
+    height: 160px;
+  }
+
+  .foto {
+    width: 200px;
+    border-radius: 35px;
+  }
+}
