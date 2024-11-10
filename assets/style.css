@@ -1,6 +1,6 @@
 * {
   font-family: "Poppins", Helvetica, sans-serif;
-  color: #111;
+  color: #113;
 }
 
 body {
@@ -12,9 +12,26 @@ a {
   text-decoration: none;
 }
 
-header nav {
-  padding: 8px;
+.header {
+  background-color: #ffffff20;
+  padding: 8px 16px;
+  box-sizing: border-box;
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-left,
+.header-right {
+  font-weight: 600;
+}
+
+.header-right {
+  text-align: end;
 }
 
 .hero-container {
@@ -54,7 +71,7 @@ header nav {
   filter: blur(25px);
 }
 
-/*? doesn't work */
+/*? gk jalan */
 .hero-background svg:hover {
   scale: 1.02;
   opacity: 1;
@@ -75,6 +92,7 @@ header nav {
 
 .hero-title {
   font-size: 64px;
+  margin: 0;
   text-align: center;
   transition: 0.25s;
 }
@@ -88,6 +106,12 @@ header nav {
 .hero-title:hover {
   transition: 0.25s;
   scale: 1.01;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  text-align: center;
+  transition: 0.25s;
 }
 
 .hero-bottom {
@@ -112,7 +136,7 @@ header nav {
   }
 
   50% {
-    transform: translateY(5px);
+    transform: translateY(7px);
   }
 
   to {
@@ -135,9 +159,9 @@ article.members {
 
 .card {
   margin-top: 110px;
-  width: 240px;
+  width: 220px;
   padding: 8px 16px;
-  border-radius: 50px;
+  border-radius: 30px;
   position: relative;
   transition: 0.25s;
 }
@@ -147,9 +171,30 @@ a .card {
   color: inherit;
 }
 
+.card-container>a:nth-child(1)>.card {
+  background-color: #ffe6f2;
+}
+
+.card-container>a:nth-child(2)>.card {
+  background-color: #ffd7be;
+}
+
+.card-container>a:nth-child(3)>.card {
+  background-color: #b2fffc;
+}
+
+.card-container>a:nth-child(4)>.card {
+  background-color: #cfffdc;
+}
+
+.card-container>a:nth-child(5)>.card {
+  background-color: #ffe6f2;
+}
+
 .card:hover {
   transition: 0.25s;
   scale: 1.05;
+  filter: brightness(0.5);
 }
 
 .card:hover .foto {
@@ -162,7 +207,7 @@ a .card {
 }
 
 .container-foto {
-  height: 200px;
+  height: 100px;
 }
 
 .foto-box {
@@ -171,8 +216,19 @@ a .card {
 }
 
 .foto {
-  border-radius: 50px;
-  width: 240px;
+  border-radius: 30px;
+  width: 220px;
+  mask-image: linear-gradient(to bottom,
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0));
 }
 
 @media screen and (max-width: 768px) {
@@ -182,15 +238,34 @@ a .card {
 
   .card {
     width: 200px;
-    border-radius: 35px;
+    border-radius: 25px;
   }
 
   .container-foto {
-    height: 160px;
+    height: 80px;
   }
 
   .foto {
     width: 200px;
-    border-radius: 35px;
+    border-radius: 25px;
   }
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 8px 16px;
 }

@@ -15,15 +15,17 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="header">
-        <a href="#">
-          <!-- <img src="assets/images/Logo.png" alt="Logo"> -->
-          <!-- Logo -->
-        </a>
-      </div>
-    </nav>
+  <header class="header">
+    <div class="header-left">
+      <a href="#">
+        <!-- <img src="assets/images/Logo.png" alt="Logo"> -->
+        <!-- Logo -->
+      </a>
+      <p>1C JTK</p>
+    </div>
+    <div class="header-right">
+      <p>Kelompok 5</p>
+    </div>
   </header>
 
   <main>
@@ -46,7 +48,10 @@
           </svg>
         </div>
         <div class="hero-foreground">
-          <h1 class="hero-title">Welcome To Our Website</h1>
+          <h1 class="hero-title">Welcome To Our <span style="color: rgb(57, 57, 255);">Website</span></h1>
+          <p class="hero-subtitle">
+            Website Biodata dengan <strong style="color: crimson;">HTML</strong> dan <strong style="color: blue;">CSS</strong>
+          </p>
         </div>
         <div class="hero-bottom">
           Scroll Down
@@ -59,78 +64,141 @@
         </div>
       </div>
     </section>
+
     <article class="members">
-      <h2>Members</h2>
+      <h2 style="display: flex; align-items: center; gap: 10px;">
+        Members
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+          <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+        </svg>
+      </h2>
       <div class="card-container">
-        <a href="#">
-          <div class="card" style="background-color: #ffe6f2;">
-            <div>
-              <div class="container-foto">
-                <div class="foto-box">
-                  <img class="foto" src="assets/images/1.png" alt="Gema">
-                </div>
+        <a href="./pages/1.html">
+          <div class="card">
+            <div class="container-foto">
+              <div class="foto-box">
+                <img class="foto" src="assets/images/1.png" alt="Gema">
               </div>
             </div>
             <div class="card-text">
-              <h4>Gema Adzan Firdaus</h4>
-              <p>Architect & Engineer</p>
+              <h3>Gema Adzan F</h3>
+              <p>241511XXX</p>
+            </div>
+            <div class="card-bottom">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-external-link">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                <path d="M11 13l9 -9" />
+                <path d="M15 4h5v5" />
+              </svg>
             </div>
           </div>
         </a>
-        <div class="card" style="background-color: #ffd7be;">
-          <div>
+        <a href="./pages/2.html">
+          <div class="card">
             <div class="container-foto">
               <div class="foto-box">
-                <img class="foto" src="assets/images/1.png" alt="Gema">
+                <img class="foto" src="assets/images/2.png" alt="Gema">
               </div>
             </div>
+            <div class="card-text">
+              <h3>Ikhsan Satriadi</h3>
+              <p>241511XXX</p>
+            </div>
+            <div class="card-bottom">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-external-link">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                <path d="M11 13l9 -9" />
+                <path d="M15 4h5v5" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <h4>Gema Adzan Firdaus</h4>
-            <p>Architect & Engineer</p>
-          </div>
-        </div>
-        <div class="card" style="background-color: #b2fffc;">
-          <div>
+        </a>
+        <a href="./pages/3.html">
+          <div class="card">
             <div class="container-foto">
               <div class="foto-box">
-                <img class="foto" src="assets/images/1.png" alt="Gema">
+                <img class="foto" src="assets/images/3.png" alt="Gema">
               </div>
             </div>
+            <div class="card-text">
+              <h3>Nike Kustiane</h3>
+              <p>241511XXX</p>
+            </div>
+            <div class="card-bottom">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-external-link">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                <path d="M11 13l9 -9" />
+                <path d="M15 4h5v5" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <h4>Gema Adzan Firdaus</h4>
-            <p>Architect & Engineer</p>
-          </div>
-        </div>
-        <div class="card" style="background-color: #cfffdc;">
-          <div>
+        </a>
+        <a href="./pages/4.html">
+          <div class="card">
             <div class="container-foto">
               <div class="foto-box">
-                <img class="foto" src="assets/images/1.png" alt="Gema">
+                <img class="foto" src="assets/images/4.png" alt="Gema">
               </div>
             </div>
+            <div class="card-text">
+              <h3>Siti Soviyyah</h3>
+              <p>241511XXX</p>
+            </div>
+            <div class="card-bottom">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-external-link">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                <path d="M11 13l9 -9" />
+                <path d="M15 4h5v5" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <h4>Gema Adzan Firdaus</h4>
-            <p>Architect & Engineer</p>
-          </div>
-        </div>
-        <div class="card" style="background-color: #ffe6f2;">
-          <div>
+        </a>
+        <a href="./pages/5.html">
+          <div class="card">
             <div class="container-foto">
               <div class="foto-box">
-                <img class="foto" src="assets/images/1.png" alt="Gema">
+                <img class="foto" src="assets/images/5.png" alt="Gema">
               </div>
             </div>
+            <div class="card-text">
+              <h3>Zahra Aldila</h3>
+              <p>241511XXX</p>
+            </div>
+            <div class="card-bottom">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-external-link">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                <path d="M11 13l9 -9" />
+                <path d="M15 4h5v5" />
+              </svg>
+            </div>
           </div>
-          <div>
-            <h4>Gema Adzan Firdaus</h4>
-            <p>Architect & Engineer</p>
-          </div>
-        </div>
+        </a>
       </div>
     </article>
+
+    <section>
+
+    </section>
   </main>
 
   <footer>
@@ -140,7 +208,3 @@
 </body>
 
 </html>
-
-<!-- 
-
--->
