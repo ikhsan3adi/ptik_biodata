@@ -97,12 +97,6 @@ header {
   transition: 0.25s;
 }
 
-@media screen and (max-width: 768px) {
-  .hero-title {
-    font-size: 48px;
-  }
-}
-
 .hero-title:hover {
   transition: 0.25s;
   scale: 1.01;
@@ -286,6 +280,14 @@ footer {
 @media screen and (max-width: 768px) {
   header {
     padding: 8px 36px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
   }
 
   article.members {
