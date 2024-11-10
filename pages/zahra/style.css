@@ -1,0 +1,159 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=MaisonNeue:wght@400;700&display=swap');
+
+.header {
+    width: 90%;
+    padding: 20px;
+    background-color: #FFB4C2;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+body {
+    font-family: 'MaisonNeue', sans-serif;
+    background: linear-gradient(135deg, #c6e7ff, #FFB4C2); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fbfbfb; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid #FFB4C2; /* Slightly lighter blue */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Interactive effect on hover for education and skills sections */
+.education, .skills, .playlist {
+    margin-top: 40px;
+    background-color: #d4f6ff; /* Light blue */
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.education:hover, .skills:hover, .playlist:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.skills-table {
+    width: 100%;
+    background-color: ffd0d9; /* Light orange */
+    border-radius: 5px;
+    overflow: hidden;
+    color: #333;
+    margin-top: 20px;
+}
+
+.skills-table td {
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.skills-table tr:nth-child(odd) td {
+    background-color: #ffd0d9; /* Slightly lighter shade of orange for alternating rows */
+}
+
+.skills h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-right: 20;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.skills li, .education li {
+    background-color: #ffd0d9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.footer {
+    width: 90%;
+    padding: 20px;
+    background-color: #FFB4C2;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #333;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+

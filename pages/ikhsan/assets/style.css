@@ -1,0 +1,119 @@
+* {
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 8px 32px;
+}
+
+section.hero {
+  color: #fff;
+  background-color: #0f172a;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 128px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #22ddcd;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin: 0;
+  color: #fff;
+  font-family: "JetBrains Mono", 'Courier New', Courier, monospace;
+  font-weight: 900;
+  transition: 0.25s;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto {
+  margin: 0 auto;
+  width: 200px;
+  transition: 0.25s;
+  mask-image: linear-gradient(to bottom,
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0));
+}
+
+td {
+  vertical-align: top;
+}
+
+section.info {
+  padding: 8px 32px;
+}
+
+section.education {
+  background-color: #0f172a;
+  padding: 8px 32px;
+  color: #dadada;
+}
+
+section.education b {
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    margin-top: 24px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+  .foto {
+    margin-bottom: 16px;
+  }
+
+  section.info {
+    padding: 8px 16px;
+  }
+
+  section.education {
+    padding: 8px 16px;
+  }
+
+  section.skills {
+    padding: 8px 16px;
+  }
+}
