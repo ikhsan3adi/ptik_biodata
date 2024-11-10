@@ -12,9 +12,9 @@ a {
   text-decoration: none;
 }
 
-.header {
+header {
   background-color: #ffffff15;
-  padding: 8px 16px;
+  padding: 8px 48px;
   box-sizing: border-box;
   position: fixed;
   display: flex;
@@ -231,26 +231,6 @@ a .card {
       rgba(0, 0, 0, 0));
 }
 
-@media screen and (max-width: 768px) {
-  article.members {
-    margin: 48px 36px;
-  }
-
-  .card {
-    width: 200px;
-    border-radius: 25px;
-  }
-
-  .container-foto {
-    height: 80px;
-  }
-
-  .foto {
-    width: 200px;
-    border-radius: 25px;
-  }
-}
-
 .card-text {
   display: flex;
   flex-direction: column;
@@ -272,7 +252,6 @@ a .card {
 
 footer {
   background-color: #f0f0f0;
-  padding: 12px 24px;
   padding: 10px 48px;
 }
 
@@ -285,8 +264,11 @@ footer {
   text-align: left;
 }
 
-.footer-right>* {
+.footer-right {
   text-align: right;
+}
+
+.footer-right>* {
   margin: 1px;
 }
 
@@ -298,4 +280,50 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #555;
+}
+
+/** Responsive */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 8px 36px;
+  }
+
+  article.members {
+    margin: 48px 36px;
+  }
+
+  footer {
+    padding: 10px 36px;
+  }
+
+  .footer-body {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-top {
+    text-align: center;
+  }
+
+  .footer-left table {
+    margin: 0 auto;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .card {
+    width: 200px;
+    border-radius: 25px;
+  }
+
+  .container-foto {
+    height: 80px;
+  }
+
+  .foto {
+    width: 200px;
+    border-radius: 25px;
+  }
 }
