@@ -76,6 +76,16 @@ section.education {
   color: #dadada;
 }
 
+section.contact {
+  background-color: #0f172a;
+  padding: 8px 32px;
+  color: #dadada;
+}
+
+section.contact a {
+  color: #22ddcd;
+}
+
 section.education b {
   color: #fff;
 }
